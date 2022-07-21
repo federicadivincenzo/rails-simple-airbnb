@@ -1,0 +1,43 @@
+$light-grey: #e2e2e2;
+$padding: 1.25rem;
+
+
+.container-show {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+  width: 80%;
+}
+
+.grey-card  {
+  background-color: $light-grey;
+  padding: $padding;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+
+.hero-category {
+  background-size: cover;
+  background-position: center;
+  object-fit: fit;
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: -3rem;
+}
+
+.container-title h2 {
+  font-weight: 700;
+}

@@ -1,6 +1,4 @@
-$light-grey: #e2e2e2;
 $padding: 1.25rem;
-
 
 .container-show {
   display: grid;
@@ -9,11 +7,7 @@ $padding: 1.25rem;
   width: 80%;
 }
 
-.grey-card  {
-  background-color: $light-grey;
-  padding: $padding;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+
 
 .container-main {
   display: flex;
@@ -25,7 +19,7 @@ $padding: 1.25rem;
 .hero-category {
   background-size: cover;
   background-position: center;
-  object-fit: fit;
+  object-fit:fill;
   height: 24rem;
   display: flex;
   justify-content: center;
@@ -33,7 +27,6 @@ $padding: 1.25rem;
   color: white;
   font-size: 24px;
   font-weight: bold;
-  border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: -3rem;
 }

@@ -1,0 +1,29 @@
+$light-grey: #e2e2e2;
+$padding: 1.25rem;
+
+.grey-card  {
+  background-color: $light-grey;
+  padding: $padding;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-body img {
+  height: 16rem;
+}
+
+.social-container {
+  justify-self: flex-end;
+  margin-top: 1em;
+}
+
+.card-bottom-container {
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+}

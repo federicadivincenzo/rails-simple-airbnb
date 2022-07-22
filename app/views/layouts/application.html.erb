@@ -11,14 +11,21 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
-    <a class="navbar-brand mx-3" href="#">Liarbnb</a>
-      <form class="form-inline d-flex my-2 my-lg-0 ">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success m-2 my-sm-0 " type="submit">Search</button>
-        <button class="btn btn-outline-primary m-2 my-sm-0"><%= link_to "Add flat", new_flat_path %></button>
-      </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <%= link_to 'Liarbnb', flats_path %>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="ms-auto d-flex">
+          <%= form_tag "/flats", method: "GET", class: "d-flex my-2 my-lg-0" do %>
+            <%= text_field_tag :search_flat, params[:search_flat], class: "form-control mx-2", placehodler: 'Search..'  %>
+            <%= submit_tag "Search", class: "btn btn-outline-success mx-2" %>
+          <% end %>
+          <%= link_to "Add flat", new_flat_path, class: "btn btn-outline-primary my-2 my-sm-0 ms-2" %>
+        </div>
+      </div>
+      </div>
     </nav>
+
 
     <%= yield %>
   </body>

@@ -1,10 +1,8 @@
 $light-grey: #e2e2e2;
-$padding: 1.25rem;
 
-.grey-card  {
-  background-color: $light-grey;
-  padding: $padding;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.card-main {
+  border-radius: 1.8em;
+  width: 20rem;
 }
 
 .card-body {
@@ -13,6 +11,9 @@ $padding: 1.25rem;
 
 .card-body img {
   height: 16rem;
+  width: 20rem;
+  border-radius: 1.8em;
+  object-fit: fill;
 }
 
 .social-container {
@@ -21,9 +22,15 @@ $padding: 1.25rem;
 }
 
 .card-bottom-container {
-  padding: $padding;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
+  padding: .6em;
+  padding-right: 2em;
+}
+
+.card-address {
+  color: #222222;
+  font-weight: lighter;
 }

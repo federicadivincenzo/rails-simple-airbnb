@@ -3,11 +3,21 @@ $padding: 1.25rem;
 .container-show {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1em;
+  gap: 1.8em;
   width: 80%;
 }
 
+@media only screen and (max-width: 600px) {
+  .container-show {
+    grid-template-columns: 1fr;
+  }
+}
 
+
+.grey-card {
+  background-color: rgba(238, 238, 238, 0.859);
+  padding: $padding;
+}
 
 .container-main {
   display: flex;

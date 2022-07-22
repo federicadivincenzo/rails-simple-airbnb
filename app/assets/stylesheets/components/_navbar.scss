@@ -1,12 +1,36 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+$red-logo: #FF5A5F;
+$border-radius: 1.8em;
+$btn-padding: .6em 1.2em;
+
+.navbar-logo {
+  text-decoration: none;
+  color: $red-logo;
+  font-weight: 700;
+  font-size: 1.4rem;
+
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-logo:hover {
+  cursor: pointer;
+  color: #FF5A5F;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+
+.btn-red {
+  background-color: $red-logo;
+  color: white;
+  padding: $btn-padding;
+  border-radius: $border-radius;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.btn-red:hover {
+  color: #d5383d;
+}
+
+.btn-white {
+  border: .8px solid grey;
+  border-radius: $border-radius ;
+  padding: $btn-padding;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }

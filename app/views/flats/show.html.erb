@@ -22,13 +22,12 @@
       <p>💴 Price per night: €<%= @flat.price_per_night %></p>
       </div>
 
-      <div class="container-social d-flex justify-content-between align-items-center grey-card ">
+      <div class="container-social d-flex justify-content-between align-items-center grey-card">
       <p>Share</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><i class="fa-brands fa-facebook-square"></i></li>
-        <li class="list-inline-item"><i class="fa-brands fa-instagram"></i></li>
-        <li class="list-inline-item"><i class="fa-brands fa-linkedin"></i></li>
-      </ul>
+      <div class="social-container">
+              <%= link_to 'Edit', edit_flat_path(@flat), class: "card-link text-warning" %>
+              <%= link_to 'Remove', flat_path(@flat), method: :delete, data: { confirm: "Are you sure?" }, class: "card-link text-danger" %>
+            </div>
       </div>
       <div><%= @map %></div>
     </div>

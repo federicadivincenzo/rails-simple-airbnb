@@ -3,20 +3,18 @@
   <p>All <%= @flats.count %> flats.</p>
   <div class="card-container d-flex flex-wrap rounded">
     <% @flats.each do |flat| %>
-      <div class="card m-1" style="width: 24rem;">
-        <div class="card-body">
+      <div class=" m-1" style="width: 24rem;">
+        <div class="card-main card-body">
+        <%= link_to flat_path(flat) do %>
           <img class="card-img-top" src="<%= flat.image %>" heigth="150px" width="" alt="Card image cap">
+        <% end %>
           <div class="card-bottom-container">
             <div class="text-container ">
-              <h4 class="card-title"><strong><%= flat.name %></strong></h4>
-              <p class="card-text"><%= flat.address %></p>
+              <p class="card-title"><%= flat.name %></p>
+              <p class="card-address"><%= flat.address %></p>
               <p class="card-text"><span>🏷 <strong>€ <%= flat.price_per_night %></strong></span> <span>👫 <strong><%= flat.number_of_guests %></strong></span></p>
             </div>
-            <div class="social-container">
-              <%= link_to 'More info', flat_path(flat), class: "card-link text-primary" %>
-              <%= link_to 'Edit', edit_flat_path(flat), class: "card-link text-warning" %>
-              <%= link_to 'Remove', flat_path(flat), method: :delete, data: { confirm: "Are you sure?" }, class: "card-link text-danger" %>
-            </div>
+
           </div>
         </div>
       </div>
